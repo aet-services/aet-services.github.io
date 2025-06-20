@@ -3,94 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartVOX-Config - Accueil</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: #f5f5f5;
+    <title>ae&t - Applications Electroniques & Techniques | SmartVOX-Config</title>
+    <meta name="description" content="ae&t, spécialiste des solutions d'alerte et de sécurité. Découvrez SmartVOX-Config, notre outil de configuration pour les appareils SmartVOX®.">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f9dc00',
+                        'primary-dark': '#e6c600',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s ease-out',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
         }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        h1 {
-            color: #1976d2;
-            margin-bottom: 20px;
-        }
-        .description {
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        .download-btn {
-            background: #1976d2;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin: 20px 0;
-            transition: background-color 0.3s;
-        }
-        .download-btn:hover {
-            background: #1565c0;
-        }
-        .features {
-            text-align: left;
-            margin: 30px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 5px;
-        }
-        .features h3 {
-            color: #1976d2;
-            margin-bottom: 15px;
-        }
-        .features ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        .features li {
-            margin: 8px 0;
-            color: #555;
-        }
-    </style>
+    </script>
 </head>
-<body>
-    <div class="container">
-        <h1>SmartVOX-Config</h1>
-        <p class="description">
-            Outil de configuration pour les appareils SmartVOX®. 
-            Configurez facilement vos appareils SmartVOX avec notre interface intuitive.
-        </p>
-        
-        <a href="download-smartvox-config-windows-setup.html" class="download-btn">
-            Télécharger SmartVOX-Config
-        </a>
-        
-        <div class="features">
-            <h3>Fonctionnalités principales :</h3>
-            <ul>
-                <li>Configuration simple et intuitive des appareils SmartVOX®</li>
-                <li>Interface graphique moderne et responsive</li>
-                <li>Mise à jour automatique vers la dernière version</li>
-                <li>Support complet des fonctionnalités SmartVOX</li>
-                <li>Compatible Windows 10/11</li>
-            </ul>
+<body class="font-inter text-black bg-white min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50 py-4 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-8 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-4 text-black no-underline">
+                <img src="assets/images/icon.png" alt="ae&t Logo" class="h-11 w-auto">
+                <div>
+                    <div class="text-2xl font-bold text-primary">ae&t</div>
+                    <div class="text-sm text-gray-600 font-normal">Applications Electroniques & Techniques</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-8 text-sm">
+                <div class="flex items-center gap-2 text-gray-600 font-medium">
+                    <i class="fas fa-phone text-primary"></i>
+                    <span>05 59 06 06 00</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-600 font-medium">
+                    <i class="fas fa-envelope text-primary"></i>
+                    <span>info@aet.fr</span>
+                </div>
+            </div>
         </div>
-        
-        <p style="color: #888; font-size: 14px;">
-            En cliquant sur "Télécharger", vous serez automatiquement redirigé vers la dernière version disponible.
-        </p>
-    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-primary-dark text-black py-16 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;><defs><pattern id=&quot;grain&quot; width=&quot;100&quot; height=&quot;100&quot; patternUnits=&quot;userSpaceOnUse&quot;><circle cx=&quot;25&quot; cy=&quot;25&quot; r=&quot;1&quot; fill=&quot;white&quot; opacity=&quot;0.05&quot;/><circle cx=&quot;75&quot; cy=&quot;75&quot; r=&quot;1&quot; fill=&quot;white&quot; opacity=&quot;0.05&quot;/><circle cx=&quot;50&quot; cy=&quot;10&quot; r=&quot;0.5&quot; fill=&quot;white&quot; opacity=&quot;0.05&quot;/></pattern></defs><rect width=&quot;100&quot; height=&quot;100&quot; fill=&quot;url(%23grain)&quot;/></svg>')] opacity-30"></div>
+        <div class="max-w-6xl mx-auto px-8 relative z-10">
+            <h1 class="text-5xl font-bold mb-4 leading-tight animate-fade-in-up">ae&t</h1>
+            <div class="text-3xl font-semibold mb-6 opacity-90 animate-fade-in-up">Applications Electroniques & Techniques</div>
+        </div>
+    </section>
+
+    <!-- External Links Section -->
+    <section class="py-12 bg-gray-50 text-center">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="flex gap-8 justify-center flex-wrap">
+                <a href="https://aet.fr" target="_blank" rel="noopener noreferrer" class="
+                    inline-flex items-center gap-2 px-8 py-4 bg-primary text-black no-underline rounded-lg shadow-lg 
+                    transition-all duration-300 font-semibold border-2 border-primary hover:-translate-y-1 hover:shadow-xl
+                ">
+                    <i class="fas fa-external-link-alt text-black"></i>
+                    aet.fr
+                </a>
+                <a href="https://smartvox.fr" target="_blank" rel="noopener noreferrer" class="
+                    inline-flex items-center gap-2 px-8 py-4 bg-primary text-black no-underline rounded-lg shadow-lg 
+                    transition-all duration-300 font-semibold border-2 border-primary hover:-translate-y-1 hover:shadow-xl
+                ">
+                    <i class="fas fa-external-link-alt text-black"></i>
+                    smartvox.fr
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe fade-in-up elements
+        document.querySelectorAll('.animate-fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
